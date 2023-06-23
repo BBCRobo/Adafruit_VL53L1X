@@ -65,7 +65,7 @@ bool Adafruit_VL53L1X::begin(uint8_t i2c_addr, TwoWire *theWire, bool debug) {
   }
   delay(5);
 
-  theWire->begin();
+  // theWire->begin();
 
   MyDevice.I2cHandle = theWire;
   dev_i2c = theWire;
